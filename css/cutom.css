@@ -1,0 +1,21 @@
+.noline
+{
+    text-decoration: none;
+}
+
+.center
+{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+body
+{
+    background-color: #1f242d;
+    color: lightblue;
+}
+.nav-foot-color
+{
+    background-color: #1f242d;
+    color: blue;
+}
