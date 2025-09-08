@@ -51,10 +51,27 @@ body,.nav-foot-color,.linkcolor
 }
 
 
-.setcolors,.navbar .nav-link,
-.navbar .navbar-brand {
-    color: #80ff88;
-    background-color: #1f242d;
+.setcolors  .nav-link,
+.setcolors .navbar-brand {
+    color: #80ff88 !important;
+    background-color: #1f242d !important;
+}
+.nav-link:hover{
+    color: #80ff88 !important;
+    text-shadow: 0 0 8px #80ff88, 0 0 16px #80ff88;
+    background-color: transparent !important;
+}
+.mybtn{
+    background-color: white;
+    color: #1f242d;
+    border: none;
+}
+.mybtn:hover{
+    box-shadow: 0 0 8px #80ff88, 0 0 16px #80ff88;
+    text-shadow: 0 0 8px #80ff88, 0 0 16px #80ff88;
+    background-color: #80ff88;
+    color: #1f242d !important;
+    border: none;
 }
 .img-size{
     height: 72%;
@@ -62,6 +79,17 @@ body,.nav-foot-color,.linkcolor
 }
 .bordercustom{
     border: 2px solid #80ff88 !important;
+}
+.card{
+    height: 230px;
+}
+.cardfont
+{
+    font-size: 32px;
+}
+.card-img-top {
+  height: 150px; /* Fix image height */
+  object-fit:contain; /* Crop image nicely */
 }
 
 .float-img
