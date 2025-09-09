@@ -9,8 +9,8 @@ function downloadCV()
     link.click();
 }
 
-function gotoabout() {
-    window.location.href = "about.html"; 
+function gotocontact() {
+    window.location.href = "contact.html"; 
 }
 document.addEventListener("DOMContentLoaded", function() {
     var typed = new Typed('.text', {
