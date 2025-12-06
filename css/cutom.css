@@ -30,16 +30,44 @@
 {
     color: #80ff88 !important;  
 }
+.show:hover{
+    text-shadow: 0 0 8px #80ff88, 0 0 16px #80ff88;
+}
+section {
+    scroll-margin-top: 90px; /* Adjust to match your navbar height */
+    /* border: 1px solid red; */
+}
 .center
 {
     align-items: center;
     align-content: center;
     text-align: center;
 }
+.text-center {
+    text-align: center !important;
+}
 body,.nav-foot-color,.linkcolor
 {
     background-color: #1f242d;
     color: #80ff88;
+}
+.bordercustom
+.ab{
+    color: #80ff88 !important;
+    font-weight: bold;
+    text-shadow: 0 0 10px #80ff88;
+    text-decoration: underline;
+    text-align: center;
+}
+.ab:hover{
+    text-shadow: 0 0 8px #80ff88, 0 0 16px #80ff88;
+}
+.nav-link.active {
+    color: #80ff88 !important;
+    text-shadow: 0 0 8px #80ff88, 0 0 16px #80ff88;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
 }
 .select{
     /* background-color: white !important; */
@@ -50,11 +78,17 @@ body,.nav-foot-color,.linkcolor
     text-shadow: 0 0 10px #80ff88;
 }
 
-
+.glass{
+    color: #80ff88 !important;
+    background-color: #1f242d66 !important;
+    backdrop-filter : blur(12px);
+    box-shadow: 0 4px 20px #00000066;
+    border-bottom: 1px solid #80ff884d;
+}
 .setcolors  .nav-link,
 .setcolors .navbar-brand {
     color: #80ff88 !important;
-    background-color: #1f242d !important;
+    background-color: transparent !important;
 }
 .nav-link:hover{
     color: #80ff88 !important;
@@ -62,7 +96,7 @@ body,.nav-foot-color,.linkcolor
     background-color: transparent !important;
 }
 .mybtn{
-    background-color: white;
+    background-color: #80ff88;
     color: #1f242d;
     border: none;
 }
@@ -91,10 +125,86 @@ body,.nav-foot-color,.linkcolor
   height: 150px; /* Fix image height */
   object-fit:contain; /* Crop image nicely */
 }
+.cardbg
+{
+    background-color:  #80ff88;
+    color: #1f242d;
+    border: 1px solid #80ff88; /* Border with your font color */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cardbg:hover{
+    background-color:  #80ff88;
+    color: #1f242d;
+    box-shadow: 0 0 8px #80ff88, 0 0 16px #80ff88;
+    text-shadow: 0 0 8px #80ff88, 0 0 16px #80ff88;
+    border: 6px solid #80ff88;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px #80ff884d;
+}
+
+.section-full {
+    min-height: 100vh;
+    display: flex;
+    scroll-margin-top: 90px;
+    align-items: center;
+}
+
+.section-half {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
 
 .float-img
 {
     animation: floatupdown 2s ease-in-out infinite;
+}
+.flip-card {
+  background-color: transparent;
+  width: 18rem;
+  height: 18rem;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(.4,2,.6,1);
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.flip-card-front {
+    z-index: 2;
+}
+
+.flip-card-back {
+    pointer-events: none;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+.progress {
+    height: 20px !important;   /* Bigger height */
+    border-radius: 10px;       /* Smooth rounded corners */
+}
+
+.progress-bar {
+    font-size: 14px;           /* Bigger text */
+    line-height: 20px;         /* Centers the percentage */
 }
 @keyframes floatupdown {
     0% { transform: translateY(0); }
