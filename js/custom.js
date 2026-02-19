@@ -1,6 +1,6 @@
 function downloadCV()
 {
-    const fileUrl = "documents/Deepak_Kale.pdf";  
+    const fileUrl = "documents/Deepak_Kale_Java.pdf";  
     const fileName = "Deepak_Kale_CV.pdf";
 
     const link = document.createElement("a");
