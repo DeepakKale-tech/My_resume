@@ -211,3 +211,152 @@ body,.nav-foot-color,.linkcolor
     50% { transform: translateY(-20px); }
     100% { transform: translateY(0); }
 }
+
+/* ================= MOBILE ================= */
+@media (max-width: 576px) {
+
+    /* Navbar */
+    .navbar-brand.logo {
+        font-size: 20px;
+    }
+
+    /* Home section text center */
+    #home .row {
+        text-align: center;
+    }
+
+    #home h1 {
+        font-size: 26px;
+    }
+
+    #home p {
+        font-size: 14px;
+    }
+
+    /* Buttons full width */
+    .mybtn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Image resize */
+    .img-size {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    /* About section image center */
+    #about img {
+        width: 80% !important;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Skills flip cards */
+    .flip-card {
+        width: 100%;
+    }
+
+    .flip-card .card {
+        width: 100% !important;
+    }
+
+    /* Projects */
+    #project .col-md-3 {
+        margin-left: 0 !important;
+    }
+
+    #project .card {
+        width: 100% !important;
+    }
+
+    /* Contact form inputs stacked */
+    #contact .row .col-md-6 {
+        width: 100%;
+    }
+
+    /* Map responsive */
+    iframe {
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    /* Footer */
+    footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 577px) and (max-width: 991px) {
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    .img-size {
+        width: 70%;
+    }
+
+    /* About section stacked */
+    #about .row {
+        text-align: center;
+    }
+
+    #about img {
+        width: 60% !important;
+        margin-bottom: 20px;
+    }
+
+    /* Skills 2 per row */
+    #skill .col-md-4 {
+        width: 50%;
+    }
+
+    /* Projects 2 per row */
+    #project .col-md-3 {
+        width: 50%;
+        margin-left: 0 !important;
+    }
+
+    #project .card {
+        width: 100% !important;
+    }
+
+    iframe {
+        width: 100% !important;
+    }
+}
+
+/* ================= SMALL LAPTOP ================= */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    #project .card {
+        width: 100% !important;
+    }
+
+    .flip-card .card {
+        width: 100% !important;
+    }
+
+    iframe {
+        width: 100% !important;
+    }
+}
+
+/* ================= LARGE SCREEN ================= */
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1300px;
+    }
+
+    #home h1 {
+        font-size: 48px;
+    }
+
+    #home p {
+        font-size: 18px;
+    }
+}
